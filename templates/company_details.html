@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FARC</title>
+
+    <style>
+        .image {
+            width: 1400px;
+            height: 600px;
+        }
+
+        body {
+            background-color: bisque;
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+<!-- Bootstrap CSS File -->
+<link href="media/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Libraries CSS Files -->
+<link href="media/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Main Stylesheet File -->
+<link href="media/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+    
+          <div id="logo" class="pull-left">
+            <a href="{% url 'home' %}"><img src="media/img/farc.png" alt="" title="" /></img></a>
+            <!-- Uncomment below if you prefer to use a text image -->
+            <!--<h1><a href="#hero">Bell</a></h1>-->
+          </div>
+    
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+            <li><a href="{% url 'home' %}">Home</a></li>
+              <li><a href="{% url 'companies' %}">Stock Prediction</a></li>
+              <li><a href="{% url 'frauddetection' %}">Credit Card Fruad Detection</a></li>
+              <li><a href="{% url 'blogg' %}">Financial Literacy</a></li>
+            </ul>
+          </nav>
+          <!-- #nav-menu-container -->
+    
+          <!-- <nav class="nav social-nav pull-right d-none d-lg-inline">
+            <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+          </nav> -->
+        </div>
+      </header>
+
+
+
+
+    <center>
+        <img src="../media/Images/{{company}}_HIGH_LOW.jpg" alt="" class="image"> <br> <br><br><br><br>
+        <img src="../media/Images/{{company}}_OPEN_CLOSE.jpg" alt="" class="image"><br> <br><br><br><br>
+        <img src="../media/Images/{{company}}_PIE_CHART.jpg" alt="" class="image1"><br> <br><br><br><br>
+        <img src="../media/Images/{{company}}_VOLUME.jpg" alt="" class="image"><br> <br><br><br><br>
+    </center>
+
+
+
+</body>
+
+<script>
+
+</script>
+
+</html>

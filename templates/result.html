@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+        <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+        
+            <!-- Bootstrap CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+                integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+        
+            <title>FARC</title>
+            <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+            <!-- Bootstrap CSS File -->
+            <link href="media/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            
+            <!-- Libraries CSS Files -->
+            <link href="media/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+            
+            <!-- Main Stylesheet File -->
+            <link href="media/css/style.css" rel="stylesheet">
+
+        </head>
+        
+        <body>
+
+
+            <header id="header">
+                <div class="container">
+            
+                  <div id="logo" class="pull-left">
+                    <a href="{% url 'home' %}"><img src="media/img/farc.png" alt="" title="" /></img></a>
+                    <!-- Uncomment below if you prefer to use a text image -->
+                    <!--<h1><a href="#hero">Bell</a></h1>-->
+                  </div>
+            
+                  <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                      <li><a href="{% url 'companies' %}">Stock Prediction</a></li>
+                      <li><a href="{% url 'frauddetection' %}">Credit Card Fruad Detection</a></li>
+                      <li><a href="{% url 'blogg' %}">Financial Literacy</a></li>
+                    </ul>
+                  </nav>
+                  <!-- #nav-menu-container -->
+            
+                  <!-- <nav class="nav social-nav pull-right d-none d-lg-inline">
+                    <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+                  </nav> -->
+                </div>
+              </header>
+
+            <h1 class="text-center">Result</h1>
+        
+        
+            {% if result == 1 %}
+        
+            <h2 class="text-center">
+                Fruad detected.
+            </h2>
+        
+            <br>
+        
+            {% else %}
+        
+            <h2 class="text-center" style="margin-top: 50px;">
+                You are good to go for payments.
+            </h2>
+        
+            <br>
+        
+            {% endif %}
+        
+            <style>
+                .text-center {
+                    border: 3px solid #fff;
+                    padding: 10px;
+                    margin: 20px;
+                    margin-top: 100px;
+                }
+        
+                .button {
+                    background: linear-gradient(to bottom, #339cff 5%, #0c6de3 100%);
+                    background-color: #339cff;
+                    border-radius: 11px;
+                    border: 3px solid #51a3f5;
+                    display: inline-block;
+                    cursor: pointer;
+                    color: #ffffff;
+                    font-family: Trebuchet MS;
+                    font-size: 28px;
+                    font-weight: bold;
+                    padding: 7px 76px;
+                    text-decoration: none;
+                    text-shadow: 2px 2px 0px #2b82d9;
+                    margin: 50px;
+                }
+        
+                .button:hover {
+                    background: linear-gradient(to bottom, #0c6de3 5%, #339cff 100%);
+                    background-color: #0c6de3;
+                }
+        
+                .button:active {
+                    position: relative;
+                    top: 1px;
+                }
+            </style>
+        </body>
+        
+        </html>

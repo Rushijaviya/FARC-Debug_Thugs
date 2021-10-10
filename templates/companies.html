@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farc</title>
+    <style>
+        #sel_bike {
+            display: none;
+        }
+
+        hr {
+            /*dummy content*/
+            height: 6px;
+            border: none;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        hr:last-child {
+            /*dummy content*/
+            margin-right: 60%;
+        }
+
+        hr.image {
+            /*dummy content*/
+            padding-bottom: 50%;
+        }
+
+        .page {
+            padding: 2em;
+            max-width: auto;
+        }
+
+        .Inn {
+            font-size: 13px;
+        }
+
+        .archive {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+            grid-gap: 2em;
+        }
+
+        .article {
+            padding: 1em;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1), 0 20px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Nunito", sans-serif;
+            background: url(../../static/three.jpg) no-repeat;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #384047;
+        }
+
+        form {
+            max-width: 300px;
+            margin: 40px auto;
+            margin-top: 30px;
+            padding: 15px 20px;
+            background: #8bee9b;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 35px;
+            margin: 0 0 20px 0;
+            margin-top: 20px;
+            text-align: center;
+            color: #2f00ff;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="datetime"],
+        input[type="email"],
+        input[type="number"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="time"],
+        input[type="url"],
+        textarea,
+        select {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            font-size: 16px;
+            height: auto;
+            margin: 0;
+            outline: 0;
+            padding: 10px;
+            width: 100%;
+            background-color: #e8eeef;
+            color: #0095ff;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+            margin-bottom: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 0 4px 8px 0;
+        }
+
+        select {
+            padding: 6px;
+            height: 32px;
+            border-radius: 2px;
+        }
+
+        button {
+            cursor: pointer;
+            align: center;
+            padding: 8px 28px 8px 28px;
+            color: #fff;
+            background-color: #ff3c00;
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            border-radius: 5px;
+            width: 50%;
+            border: 1px solid #ff1100;
+            border-width: 1px 1px 3px;
+            box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+            margin-bottom: 10px;
+            margin-left: 25%;
+            background: -webkit-linear-gradient(to right, #018c9e 0%, #0077ff 100%);
+            background: -moz-linear-gradient(to right, #018c9e 0%, #0077ff 100%);
+            background: linear-gradient(to right, #018c9e 0%, #0077ff 100%);
+        }
+
+        fieldset {
+            margin-bottom: 30px;
+            border: none;
+        }
+
+        legend {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        label.light {
+            font-weight: 300;
+            display: inline;
+        }
+
+        .bikes {
+            margin-top: 0px;
+        }
+
+        .number {
+            background-color: #5fcf80;
+            color: #fff;
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            font-size: 0.8em;
+            margin-right: 4px;
+            line-height: 30px;
+            text-align: center;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+            border-radius: 100%;
+        }
+
+        @media screen and (min-width: 480px) {
+            form {
+                max-width: 700px;
+            }
+        }
+    </style>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+<!-- Bootstrap CSS File -->
+<link href="media/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Libraries CSS Files -->
+<link href="media/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Main Stylesheet File -->
+<link href="media/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <header id="header">
+        <div class="container">
+    
+          <div id="logo" class="pull-left">
+            <a href="{% url 'home' %}"><img src="media/img/farc.png" alt="" title="" /></img></a>
+            <!-- Uncomment below if you prefer to use a text image -->
+            <!--<h1><a href="#hero">Bell</a></h1>-->
+          </div>
+    
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+            <li><a href="{% url 'home' %}">Home</a></li>
+              <li><a href="{% url 'companies' %}">Stock Prediction</a></li>
+              <li><a href="{% url 'frauddetection' %}">Credit Card Fruad Detection</a></li>
+              <li><a href="{% url 'blogg' %}">Financial Literacy</a></li>
+            </ul>
+          </nav>
+          <!-- #nav-menu-container -->
+    
+          <!-- <nav class="nav social-nav pull-right d-none d-lg-inline">
+            <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+          </nav> -->
+        </div>
+      </header>
+
+    <div class="page">
+        <h1>All Companies</h1>
+        <div class="archive">
+            {% for company in companies_list %}
+            <article class="article">
+                {% comment %}
+                <hr class="image" />
+                {% endcomment %}
+                <div class="Inn">
+                    <form action="" class="border border-light" method="POST">
+                        {% csrf_token %}
+
+                        <button type="submit" name="company" value="{{company}}">{{company}}</button>
+                        <br><br>
+                    </form>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

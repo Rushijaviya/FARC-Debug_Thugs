@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Financial Advisory Relavance Capital</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicon -->
+  <link href="media/img/favicon.ico" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="media/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="media/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="media/css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-12">
+          <a class="hero-brand" href="{% url 'home' %}" title="Home"><img alt="Bell Logo" src="media/img/farc.png" width="163px" height="51px"></a>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <h1>
+          Financial Advisary Relavance Capital
+          </h1>
+
+        <p class="tagline">
+          Earning comes from Learning
+        </p>
+        <a class="btn btn-full" href="#features">Get Started Now</a>
+      </div>
+    </div>
+
+  </section>
+  <!-- /Hero -->
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="{% url 'home' %}"><img src="media/img/farc.png" alt="" title="" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Bell</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="#features">Features</a></li>
+          <li><a href="{% url 'companies' %}">Stock Prediction</a></li>
+          <li><a href="{% url 'frauddetection' %}">Credit Card Fruad Detection</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="{% url 'blogg' %}">Financial Literacy</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+
+      <!-- <nav class="nav social-nav pull-right d-none d-lg-inline">
+        <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+      </nav> -->
+    </div>
+  </header>
+  <!-- #header -->
+
+
+
+  <div class="block bg-primary block-pd-lg block-bg-overlay text-center" data-bg-img="media/img/parallax-bg.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
+    <h2>
+        Welcome to a perfect place
+      </h2>
+
+    <p>
+      It's not your salary that makes you rich, it's your spending habits.
+    </p>
+    <img alt="Bell - A perfect theme" class="gadgets-img hidden-md-down" src="media/img/gadgets.jpg">
+  </div>
+  <!-- /Parallax -->
+  <!-- Features -->
+
+  <section class="features" id="features">
+    <div class="container">
+      <h2 class="text-center">
+          Features
+        </h2>
+
+      <div class="row">
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-file-bar-graph-fill" viewBox="0 0 16 16">
+                  <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-2 11.5v-6a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2.5.5a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-1zm-3 0a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-1z"/>
+                </svg>
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                  Stock Prediction 
+                </h3>
+
+              <p>
+                 Predicting stock price according to latest data for better future investment
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-credit-card-fill" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v1H0V4zm0 3v5a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7H0zm3 2h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1a1 1 0 0 1 1-1z"/>
+                </svg>
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                  Credit Card Fruad Detection
+                </h3>
+
+              <p>
+                Are you sure your banking is safe with current era of credit card fruad? we will check 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-bank2" viewBox="0 0 16 16">
+                  <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
+                </svg>
+              </div>
+            </div>
+
+            <div>
+              <h3>
+                  Financial Literacy
+                </h3>
+
+              <p>
+               Effectively use our various financial skills, including budgeting, and investing.              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-piggy-bank-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zm7.173 3.876a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199zm-8.999-.65A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 1 0 .286-.958A7.601 7.601 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962zM5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0z"/>
+                </svg>
+                            </div>
+            </div>
+
+            <div>
+              <h3>
+                  Early Financial Planning
+                </h3>
+
+              <p>
+                Enjoy your retirement life with our early financial planning
+
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-file-ruled-fill" viewBox="0 0 16 16">
+                  <path d="M12 0H4a2 2 0 0 0-2 2v4h12V2a2 2 0 0 0-2-2zm2 7H6v2h8V7zm0 3H6v2h8v-2zm0 3H6v3h6a2 2 0 0 0 2-2v-1zm-9 3v-3H2v1a2 2 0 0 0 2 2h1zm-3-4h3v-2H2v2zm0-3h3V7H2v2z"/>
+                </svg>              </div>
+            </div>
+
+            <div>
+              <h3>
+                  Financial Awarness
+                </h3>
+
+              <p>
+                Money is better than poverty, if only for financial reason 
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-col col-lg-4 col-xs-12">
+          <div class="card card-block text-center">
+            <div>
+              <div class="feature-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" fill="currentColor" class="bi bi-person-badge-fill" viewBox="0 0 16 16">
+                  <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm4.5 0a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm5 2.755C12.146 12.825 10.623 12 8 12s-4.146.826-5 1.755V14a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-.245z"/>
+                </svg>              </div>
+            </div>
+
+            <div>
+              <h3>
+                Financial Assistant 
+                </h3>
+
+              <p>
+                Financial freedom is having your heart and mind free from worry about the WHAT-IFS of life
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Features -->
+  <!-- Call to Action -->
+
+  <section class="cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 col-sm-12 text-lg-left text-center">
+          <h2>
+            Financial Advisory Relavance Capital
+            </h2>
+
+          <p>
+            Experience the most awaited financial web application, which brings you many features at the same place!
+                    </p>
+        </div>
+
+        <div class="col-lg-3 col-sm-12 text-lg-right text-center">
+          <a class="btn btn-ghost" href="#">FARC</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /Call to Action -->
+  <!-- Team -->
+
+  <section class="team" id="team">
+    <div class="container">
+      <h2 class="text-center">
+          Meet our team
+        </h2>
+
+      <div class="row">
+        <div class="col-sm-3 col-xs-6">
+          <div class="card card-block">
+            <a href="#"><img alt="" class="team-img" src="media/img/team-1.png" style="margin-right: 50px;">
+              <div class="card-title-wrap">
+                <span class="card-title">Rushi Javiya</span> <span class="card-text">Team Member</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="https://twitter.com/rushi_javiya"><i class="fa fa-twitter"></i></a>  <a href="https://www.linkedin.com/in/rushi-javiya-6286a91b5/"><i class="fa fa-linkedin"></i></a> <a href="mailto:rushijaviya05@gmail.com"><i class="fa fa-envelope"></i></a> <a href="https://github.com/Rushijaviya"><i class="fa fa-github"></i></a>
+            </nav>
+
+            <p>
+              Believes mindfulness in the workplace is the key to success
+            </p>
+          </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-sm-3 col-xs-6" style="margin-left: 130px;">
+        <div class="card card-block" >
+          <a href="#"><img alt="" class="team-img" src="media/img/team-2.png">
+              <div class="card-title-wrap">
+                <span class="card-title">Mohit Panchasara</span> <span class="card-text">Team Member</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="https://twitter.com/MohitPanchasara"><i class="fa fa-twitter"></i></a> <a href="https://www.linkedin.com/in/mohit-panchasara-81182a1a9"><i class="fa fa-linkedin"></i></a> <a href="mailto:mohitpanchasara@gmail.com"><i class="fa fa-envelope"></i></a> <a href="https://github.com/MohitPanchasara"><i class="fa fa-github"></i></a>
+          </nav>
+
+          <p>
+            keen on the field of gaming technology and software
+          </p>
+        </div>
+        </a>
+      </div>
+    </div>
+
+
+
+    <div class="col-sm-3 col-xs-6" style="margin-left: 123px;">
+      <div class="card card-block" >
+        <a href="#"><img alt="" class="team-img" src="media/img/team-3.png" >
+              <div class="card-title-wrap">
+                <span class="card-title">Tapan Savani</span> <span class="card-text">Team Member</span>
+              </div>
+
+              <div class="team-over">
+                <h4 class="hidden-md-down">
+                  Connect with me
+                </h4>
+
+                <nav class="social-nav">
+                  <a href="https://twitter.com/TapanSavani"><i class="fa fa-twitter"></i></a> <a href="https://www.linkedin.com/in/tapan-savani-843a74194/"><i class="fa fa-linkedin"></i></a> <a href="mailto:savanitapan2001@gmail.com"><i class="fa fa-envelope"></i></a> <a href="https://github.com/stapan17"><i class="fa fa-github"></i></a>
+        </nav>
+
+        <p>
+          Dedicated and result-oriented problem solver
+        </p>
+      </div>
+      </a>
+    </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- /Team -->
+  <!-- @component: footer -->
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2 class="section-title">Contact Us</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4">
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>Gujarat</p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>contact.farc@gmail.com</p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>90123456782</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-8">
+          <div class="form">
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="bottom">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+            <p class="copyright-text">
+              FARC
+            </p>
+            <div class="credits">
+            
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-xs-12 text-lg-right text-center">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="{% url 'home' %}">Home</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="{% url 'blogg' %}">Financial Literacy</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#features">Features</a>
+              </li>
+
+              <!-- <li class="list-inline-item">
+                <a href="#portfolio">Credit Card Fruad Detection</a>
+              </li> -->
+
+              <li class="list-inline-item">
+                <a href="#team">Team</a>
+              </li>
+
+              <li class="list-inline-item">
+                <a href="#contact">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+  <!-- Required JavaScript Libraries -->
+  <script src="media/lib/jquery/jquery.min.js"></script>
+  <script src="media/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="media/lib/superfish/hoverIntent.js"></script>
+  <script src="media/lib/superfish/superfish.min.js"></script>
+  <script src="media/lib/tether/js/tether.min.js"></script>
+  <script src="media/lib/stellar/stellar.min.js"></script>
+  <script src="media/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="media/lib/counterup/counterup.min.js"></script>
+  <script src="media/lib/waypoints/waypoints.min.js"></script>
+  <script src="media/lib/easing/easing.js"></script>
+  <script src="media/lib/stickyjs/sticky.js"></script>
+  <script src="media/lib/parallax/parallax.js"></script>
+  <script src="media/lib/lockfixed/lockfixed.min.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="media/js/custom.js"></script>
+
+  <script src="media/contactform/contactform.js"></script>
+
+</body>
+</html>

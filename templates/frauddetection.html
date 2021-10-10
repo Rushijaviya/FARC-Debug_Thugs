@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farc</title>
+
+
+    <style type="text/css">
+        #id_long_desc {
+            width: 403px;
+        }
+
+        *,
+        *:before,
+        *:after {
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Nunito", sans-serif;
+            color: #384047;
+        }
+
+
+
+
+        form {
+            max-width: 300px;
+            margin: 10px auto;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #f4f7f8;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 35px;
+            margin: 0 0 20px 0;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="datetime"],
+        input[type="email"],
+        input[type="number"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="time"],
+        input[type="url"],
+        textarea,
+        select {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            font-size: 16px;
+            height: auto;
+            margin-top: 12px;
+            outline: 0;
+            padding: 10px;
+            width: 61%;
+            background-color: #e8eeef;
+            color: #3f596b;
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+            margin-bottom: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin: 10px 4px 8px 0;
+        }
+
+        select {
+            padding: 6px;
+            height: 32px;
+            border-radius: 2px;
+        }
+
+        button {
+            padding: 10px 30px 10px 30px;
+            color: #fff;
+            background-color: #ff8d1e;
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            border-radius: 8px;
+            width: 40%;
+            border: 1px solid #ff8d1e;
+            border-width: 1px 1px 3px;
+            box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            color: white;
+            background-color: blueviolet;
+        }
+
+        .btnSub {
+            padding: 10px 30px 10px 30px;
+            color: #fff;
+            background-color: #4bc970;
+            font-size: 18px;
+            text-align: center;
+            font-style: normal;
+            border-radius: 5px;
+            width: 50%;
+            border: 1px solid #3ac162;
+            border-width: 1px 1px 3px;
+            box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+            margin-bottom: 10px;
+            background: -webkit-linear-gradient(to right, #019e35 0%, #02e64d 100%);
+            background: -moz-linear-gradient(to right, #019e35 0%, #02e64d 100%);
+            background: linear-gradient(to right, #019e35 0%, #02e64d 100%);
+        }
+
+        .btnSub:hover {
+            background: -webkit-linear-gradient(to right, #02e64d 0%, #019e35 100%);
+            background: -moz-linear-gradient(to right, #02e64d 0%, #019e35 100%);
+            background: linear-gradient(to right, #02e64d 0%, #019e35 100%);
+            color: white;
+        }
+
+        .center {
+            align: center;
+            text-align: center;
+            margin: 40px;
+        }
+
+        fieldset {
+            margin-bottom: 30px;
+            border: none;
+        }
+
+        legend {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-size: 19px;
+        }
+
+        label.light {
+            font-weight: 300;
+            display: inline;
+        }
+
+        .bikes {
+            margin: 70px;
+            border-radius: 3px;
+        }
+
+        .number {
+            background-color: #5fcf80;
+            color: #fff;
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            font-size: 0.8em;
+            margin-right: 4px;
+            line-height: 30px;
+            text-align: center;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+            border-radius: 100%;
+        }
+
+        @media screen and (min-width: 480px) {
+            form {
+                max-width: 700px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link href="media/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Libraries CSS Files -->
+    <link href="media/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Main Stylesheet File -->
+    <link href="media/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="container">
+    
+          <div id="logo" class="pull-left">
+            <a href="{% url 'home' %}"><img src="media/img/farc.png" alt="" title="" /></img></a>
+            <!-- Uncomment below if you prefer to use a text image -->
+            <!--<h1><a href="#hero">Bell</a></h1>-->
+          </div>
+    
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+            <li><a href="{% url 'home' %}">Home</a></li>
+              <li><a href="{% url 'companies' %}">Stock Prediction</a></li>
+              <li><a href="{% url 'frauddetection' %}">Credit Card Fruad Detection</a></li>
+              <li><a href="{% url 'blogg' %}">Financial Literacy</a></li>
+            </ul>
+          </nav>
+          <!-- #nav-menu-container -->
+    
+          <!-- <nav class="nav social-nav pull-right d-none d-lg-inline">
+            <a href="#"><i class="fa fa-twitter"></i></a> <a href="#"><i class="fa fa-facebook"></i></a> <a href="#"><i class="fa fa-linkedin"></i></a> <a href="#"><i class="fa fa-envelope"></i></a>
+          </nav> -->
+        </div>
+      </header>
+
+    <center>
+        <h1>Check For Credit card fraud detection</h1>
+
+        <form action="" method="POST">
+
+            {% csrf_token %}
+
+            <br />
+
+            <input id="id_long_desc" type="text" placeholder="Latitude Location of Credit Card Holder" name='lat' required> <br>
+            <input id="id_long_desc" type="text" placeholder="Longitude Location of Credit Card Holder" name='long' required>
+            <br>
+            <input id="id_long_desc" type="text" placeholder="Amount of Transaction" name='amt' required> <br>
+
+            <input id="id_long_desc" type="text" placeholder="Zip of Credit Card Holder" name='zipp' required> <br>
+            <input id="id_long_desc" type="text" placeholder="Credit Card Holder's City Population" name='city_pop' required>
+            <br>
+            <input id="id_long_desc" type="text" placeholder="UNIX Time of transaction" name='unix_time' required> <br>
+            <input id="id_long_desc" type="text" placeholder="Latitude Location of Merchant" name='merch_lat' required> <br>
+            <input id="id_long_desc" type="text" placeholder="Longitude Location of Merchant" name='merch_long' required> <br>
+
+            <select name="gender" id="">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+
+            <!-- lat - Latitude Location of Credit Card Holder
+        long - Longitude Location of Credit Card Holder
+        amt - Amount of Transaction
+        zip - Zip of Credit Card Holder
+        city_pop - Credit Card Holder's City Population
+        unix_time - UNIX Time of transaction
+        merch_lat - Latitude Location of Merchant
+        merch_long - Longitude Location of Merchant
+        gender_le - 1 for Male, 0 for female -->
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </center>
+</body>
+
+</html>
