@@ -4,9 +4,9 @@
 Debug Thugs
 
 ## Team Members 
-[Rushi Javiya ](https://github.com/Rushijaviya) 
-[Tapan Savani](https://github.com/Stapan17)
-[Mohit Panchasara](https://github.com/MohitPanchasara)
+* [Rushi Javiya ](https://github.com/Rushijaviya) 
+* [Tapan Savani](https://github.com/Stapan17)
+* [Mohit Panchasara](https://github.com/MohitPanchasara)
 
 ## Problem Statement 
 * Now-a-days, there are many cases of fraud detections and there is the requirement of good and accurate fraud detection systems.
