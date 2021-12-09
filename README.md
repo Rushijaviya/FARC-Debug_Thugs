@@ -8,6 +8,9 @@ Debug Thugs
 * [Tapan Savani](https://github.com/Stapan17)
 * [Mohit Panchasara](https://github.com/MohitPanchasara)
 
+## PPT Link
+[Presentation](https://drive.google.com/file/d/1d_AiLFRMhsmK6Tykz3KPH6x02idDP0F4/view?usp=sharing)
+
 ## Problem Statement 
 * Now-a-days, there are many cases of fraud detections and there is the requirement of good and accurate fraud detection systems.
 * To Develop credit card fraud detection systems for finances.
